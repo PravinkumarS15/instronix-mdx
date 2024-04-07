@@ -1,0 +1,9 @@
+export default function Page() {
+  return (
+    <>
+      <section className="flex-coloum-center gap-6 mt-24  w-full ">
+        <p className="text-center">Events</p>
+      </section>
+    </>
+  );
+}
