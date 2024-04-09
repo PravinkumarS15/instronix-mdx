@@ -13,7 +13,7 @@ export default function NavSheet() {
       initial="initial"
       animate="enter"
       exit="exit"
-      className="h-[100vh] fixed bg-black right-0 top-0 text-white"
+      className="h-[100vh] fixed bg-black right-0 top-0 text-white z-40"
     >
       <div className="h-full p-20 flex flex-col justify-between">
         <div className="flex flex-col text-5xl font-poppins font-extralight gap-6 mt-20">
