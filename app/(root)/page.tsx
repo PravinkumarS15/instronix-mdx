@@ -7,12 +7,11 @@ import Footer from "@/components/Footer/Footer";
 export default function HomePage() {
   return (
     <>
-      <section className="flex-coloum-center gap-6 mt-24  w-full ">
+      <section className="flex-coloum-center gap-6 mt-20  w-full ">
         <Hero />
         <About />
         <LandingParallex />
         <Events />
-        <Footer />
       </section>
     </>
   );

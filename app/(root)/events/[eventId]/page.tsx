@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import "highlight.js/styles/github-dark.min.css";
+import Hero from "@/components/Hero/Hero";
 
 type Props = {
   params: {
@@ -45,28 +46,33 @@ export default async function Post({ params: { eventId } }: Props) {
   // const pubDate = getFormattedDate(meta.date);
 
   return (
-    <div className="max-w-4xl mx-auto px-5 mt-24 mb-8 flex flex-col gap-5 ">
-      <p className=" mt-2 text-left text-5xl font-bold">{meta.title}</p>
-      <div className="w-72 h-auto overflow-hidden mx-auto">
-        <Image
-          src={meta.image}
-          alt="poster"
-          width={900}
-          height={900}
-          className=" object-contain"
-        />
-      </div>
+    <div className="relative max-w-6xl mx-auto px-5 mt-20 mb-8 flex flex-col gap-5 ">
+      <div className="flex flex-row gap-2 ">
+        <div className="w-2/5 sticky top-28  flex flex-col items-start justify-center h-full gap-4">
+          <p className=" text-left text-5xl font-bold">{meta.title}</p>
+          <div className="overflow-hidden ">
+            <Image
+              src={meta.image}
+              alt="poster"
+              width={320}
+              height={320}
+              className="object-cover"
+            />
+          </div>
+          <a href={meta.link} target="_blank">
+            <button className="bg-black  text-white px-8 py-4 text-2xl rounded-[30px]">
+              Register
+            </button>
+          </a>
+        </div>
 
-      <div className="max-w-5xl mx-auto px-5 mt-10 mb-10 text-black flex flex-col gap-2">
-        <article className="prose prose-xl">{content}</article>
-        <a href={meta.link} target="_blank">
-          <button className="bg-black text-white px-6 py-3 text-xl rounded-[10px]">
-            Register
-          </button>
-        </a>
-        <Link href="/" className="mt-5">
-          Back to home
-        </Link>
+        <div className=" relative w-3/5 px-5  text-black flex flex-col gap-2">
+          <div className="h-24 bg-gradient-to-b from-white to-transparent via-opacity-0 sticky top-20"></div>
+          <article className="prose prose-xl">{content}</article>
+          <Link href="/" className="mt-5">
+            Back to home
+          </Link>
+        </div>
       </div>
     </div>
   );

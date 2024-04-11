@@ -5,7 +5,6 @@ import EventsCard from "./EventsCard";
 
 export default async function Events() {
   const posts = await getEventsMeta();
-
   if (!posts) {
     return (
       <p className=" mt-10 text-center mt-30">Sorry :( No posts found - 😢</p>

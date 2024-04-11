@@ -1,4 +1,4 @@
-// import Footer from "@/components/shared/Footer"
+import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/NavBar";
 
 export default function RootLayout({
@@ -9,10 +9,8 @@ export default function RootLayout({
   return (
     <div className="flex h-screen flex-col">
       <Navbar />
-      <main className="flex-1 bg-dotted-pattern bg-contain bg-purple-50">
-        {children}
-      </main>
-      {/* <Footer /> */}
+      <main className="flex-1 bg-dotted-pattern bg-contain">{children}</main>
+      <Footer />
     </div>
   );
 }

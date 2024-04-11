@@ -33,3 +33,9 @@ interface IImageCardProps {
     tags: string[];
     subTitle: string;
   }
+
+interface IAboutContent {
+    title: string;
+    description: string;
+    image: string
+}

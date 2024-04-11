@@ -15,12 +15,12 @@ export default async function Events({
       <Image
         src={image}
         alt="poster"
-        className="w-full h-full transition-transform group-hover:scale-110 duration-200 object-cover"
+        className="w-full h-full transition-transform group-hover:scale-105 duration-200 object-cover"
         fill
       />
-      <div className="absolute inset-0 flex flex-col gap-1 items-start justify-end bg-gradient-to-t from-black/60 to-transparent p-4">
-        <p className="text-2xl font-medium">{title}</p>
-        <p className="text-base font-light">{subTitle}</p>
+      <div className="absolute inset-0 flex flex-col gap-1 items-start justify-end bg-gradient-to-t from-black to-transparent p-4 text-white">
+        <p className="text-2xl font-semibold">{title}</p>
+        <p className="text-sm font-light">{subTitle}</p>
         <div className="flex flex-row gap-2 text-xs">
           {(tags ?? []).map((tag) => (
             <p className="">#{tag}</p>
