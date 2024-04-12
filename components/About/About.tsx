@@ -20,15 +20,18 @@ export default function About() {
         <motion.div className="flex gap-4 " style={{ x }}>
           {aboutContent.map((content: IAboutContent, index: number) => {
             return (
-              <div key={index} className="w-screen px-20">
+              <div
+                key={index}
+                className="w-screen px-20 flex items-center justify-center"
+              >
                 <div className=" max-w-7xl mx-auto">
                   <div className="w-full flex gap-7">
                     <div className="w-1/2 flex items-center justify-center">
                       <Image
                         src={content.image}
                         alt="about_image"
-                        className="w-1/2"
-                        width={200}
+                        className="object-cover"
+                        width={600}
                         height={300}
                       />
                     </div>

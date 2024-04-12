@@ -18,7 +18,7 @@ export default function NavBar() {
           hidden: { y: "-100%" },
         }}
         transition={{ duration: 0.35, ease: "easeInOut" }}
-        className="text-white fixed top-0 w-full z-50 py-2 bg-black"
+        className="text-white fixed top-0 w-full z-50 py-2 bg-transparent"
       >
         <Container className="flex flex-row justify-between items-center">
           <p className="font-light text-3xl ">Instronix</p>

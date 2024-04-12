@@ -7,7 +7,7 @@ import Footer from "@/components/Footer/Footer";
 export default function HomePage() {
   return (
     <>
-      <section className="flex-coloum-center gap-6 mt-20  w-full ">
+      <section className="flex-coloum-center gap-6 w-full ">
         <Hero />
         <About />
         <LandingParallex />
