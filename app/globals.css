@@ -7,3 +7,13 @@
     @apply text-left text-5xl font-bold
   }
 }
+
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    #009871,
+    #009e9c,
+    #c53f43
+  );
+  background-clip: text;
+}
