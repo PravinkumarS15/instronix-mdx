@@ -24,11 +24,11 @@ export default function About() {
               return (
                 <div
                   key={index}
-                  className="w-screen px-20 flex items-center justify-center"
+                  className="w-screen px-5 lg:px-20 flex items-center justify-center"
                 >
                   <div className=" max-w-7xl mx-auto">
-                    <div className="w-full flex gap-7">
-                      <div className="w-1/2 flex items-center justify-center">
+                    <div className="w-full flex gap-7 flex-col lg:flex-row items-center justify-center">
+                      <div className="w-full lg:w-1/2 flex items-center justify-center">
                         <Image
                           src={content.image}
                           alt="about_image"
@@ -38,8 +38,10 @@ export default function About() {
                         />
                       </div>
 
-                      <div className="w-1/2 flex flex-col justify-center text-left gap-4">
-                        <p className="text-5xl font-light">{content.title}</p>
+                      <div className="w-full lg:w-1/2 flex flex-col justify-center text-left gap-4">
+                        <p className="text-5xl font-light text-center lg:text-left">
+                          {content.title}
+                        </p>
                         <p className="text-xl font-thin">
                           {content.description}
                         </p>

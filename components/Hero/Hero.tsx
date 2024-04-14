@@ -42,7 +42,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="h-screen overflow-hidden relative">
+    <section className="h-screen overflow-hidden relative pt-28 lg:pt-5">
       <motion.div
         className="absolute w-full h-full"
         initial={{ opacity: 0 }}
@@ -61,13 +61,13 @@ export default function Hero() {
         ></video>
       </motion.div>
       <Container className=" flex items-center justify-center flex-col pt-10">
-        <div className="w-full flex flex-row max-w-6xl mx-auto">
-          <div className="w-1/2 relative flex flex-col gap-4 justify-center text-white overflow-hidden">
+        <div className="w-full flex flex-col lg:flex-row max-w-6xl mx-auto">
+          <div className="w-full lg:w-1/2 relative flex flex-col text-center lg:text-left gap-5 lg:gap-4 justify-center text-white overflow-hidden">
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.35, ease: "easeInOut" }}
-              className="text-7xl font-semibold text-transparent gradient-text overflow-hidden text-white"
+              className="text-5xl lg:text-7xl font-semibold text-transparent gradient-text overflow-hidden text-white"
             >
               Instronix 2024
             </motion.p>
@@ -89,7 +89,7 @@ export default function Hero() {
             </motion.p>
           </div>
           <motion.div
-            className="w-1/2 h-full flex items-center justify-center"
+            className="w-full lg:w-1/2 h-full flex items-center justify-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.35, ease: "easeIn" }}
