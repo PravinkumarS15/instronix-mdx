@@ -8,8 +8,12 @@ export const navLinks: INavLinks[] = [
     href: "/events",
   },
   {
-    title: "Guideliness",
-    href: "/guideliness",
+    title: "Events Day 1",
+    href: "/events/day1",
+  },
+  {
+    title: "Events Day 2",
+    href: "/events/day2",
   },
 ];
 

@@ -4,6 +4,8 @@ import LandingParallex from "@/components/Landingparallex/LandingParallex";
 import Events from "@/components/Events/Events";
 import Footer from "@/components/Footer/Footer";
 
+export const revalidate = 86400; // 1 day
+
 export default function HomePage() {
   return (
     <>
