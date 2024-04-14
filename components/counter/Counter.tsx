@@ -6,7 +6,7 @@ import { LampContainer } from "../ui/lampui";
 import {CounterBlock}  from "./CounterBlock";
 import { TextRevealCard } from "@/components/ui/text-reveal-card";
 
-export function Counter() {
+export default function Counter() {
   return (
     <LampContainer>
       <motion.h1

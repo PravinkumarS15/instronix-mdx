@@ -1,12 +1,12 @@
 "use client";
 
-import lp1 from "@/public/assets/jpg/lp1.jpeg";
-import lp2 from "@/public/assets/jpg/lp2.jpeg";
+import lp1 from "@/public/assets/jpg/lp1.jpg";
+import lp2 from "@/public/assets/jpg/lp2.jpg";
 import lp3 from "@/public/assets/jpg/lp3.jpg";
 import lp4 from "@/public/assets/jpg/lp4.jpg";
 import lp5 from "@/public/assets/jpg/lp5.jpg";
 import lp6 from "@/public/assets/jpg/lp6.jpg";
-import lp7 from "@/public/assets/jpg/lp7.jpeg";
+import lp7 from "@/public/assets/jpg/lp7.jpg";
 import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
