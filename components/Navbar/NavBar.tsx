@@ -21,7 +21,7 @@ export default function NavBar() {
         <Container className="flex flex-row justify-between items-center">
           <p className="font-light text-3xl ">Instronix</p>
           <div
-            className="group flex h-16 w-16 cursor-pointer items-center justify-center rounded-full  hover:bg-slate-700"
+            className="group flex h-16 w-16 cursor-pointer items-center justify-center rounded-full  "
             onClick={() => setIsOpen(!isOpen)}
           >
             <div className="space-y-2">

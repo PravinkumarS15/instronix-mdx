@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Container from "../common/Container";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -42,15 +42,32 @@ export default function Hero() {
   };
 
   return (
-    <section className="h-screen overflow-hidden relative pt-10  bg-gradient-to-b from-gray-900 to-[#009871] ">
-      <Container className=" flex items-center justify-center flex-col">
+    <section className="h-screen overflow-hidden relative bg-gradient-to-b  from-[#009871] to-black">
+      <motion.div
+        className="absolute w-full h-full"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.16 }}
+        transition={{
+          duration: 2,
+          ease: "easeIn",
+        }}
+      >
+        <video
+          src="/assets/intro.mp4"
+          loop
+          autoPlay
+          muted
+          className="object-cover w-full h-full opacity-50"
+        ></video>
+      </motion.div>
+      <Container className=" flex items-center justify-center flex-col pt-10">
         <div className="w-full flex flex-row max-w-6xl mx-auto">
-          <div className="w-1/2 flex flex-col gap-4 justify-center text-white overflow-hidden">
+          <div className="w-1/2 relative flex flex-col gap-4 justify-center text-white overflow-hidden">
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.35, ease: "easeInOut" }}
-              className="text-7xl font-extrabold text-transparent gradient-text overflow-hidden"
+              className="text-7xl font-semibold text-transparent gradient-text overflow-hidden text-white"
             >
               Instronix 2024
             </motion.p>
@@ -58,15 +75,15 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.35, ease: "easeInOut" }}
-              className="text-2xl font-medium"
+              className="text-2xl font-thin"
             >
-              National Level Technical Symposium
+              A National Technical Symposium
             </motion.p>
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.35, ease: "easeInOut" }}
-              className="text-2xl font-medium"
+              className="text-2xl font-thin"
             >
               Dept. of EIE - PTU
             </motion.p>
@@ -98,7 +115,7 @@ export default function Hero() {
           className="relative whitespace-nowrap text-gray-300 opacity-25 text-[120px] font-medium"
           ref={slider}
         >
-          <p className="relative m-0 pr-9" ref={firstText}>
+          <p className="relative m-0 pr-0" ref={firstText}>
             Instronix 2024 - EIE - PTU -
           </p>
           <p className="absolute left-full top-0" ref={secondText}>

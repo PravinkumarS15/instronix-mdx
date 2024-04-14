@@ -4,16 +4,6 @@
 
 @layer utilities {
   .section-heading {
-    @apply text-left text-5xl font-bold
+    @apply text-7xl text-center font-extralight
   }
-}
-
-.gradient-text {
-  background: linear-gradient(
-    to right,
-    #009871,
-    #009e9c,
-    #c53f43
-  );
-  background-clip: text;
 }

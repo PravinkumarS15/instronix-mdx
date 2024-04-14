@@ -14,7 +14,7 @@ export default async function Events() {
   return (
     <section className="pt-20 flex-1 ">
       <Container>
-        <p className="section-heading">Events</p>
+        <p className="section-heading text-white">Events</p>
 
         <div className="grid grid-cols-4 gap-10 py-10">
           {posts.map((post) => {
