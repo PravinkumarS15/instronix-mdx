@@ -42,11 +42,11 @@ export default function Hero() {
   };
 
   return (
-    <section className="h-screen overflow-hidden relative bg-gradient-to-b  from-[#009871] to-black">
+    <section className="h-screen overflow-hidden relative">
       <motion.div
         className="absolute w-full h-full"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 0.16 }}
+        animate={{ opacity: 0.2 }}
         transition={{
           duration: 2,
           ease: "easeIn",

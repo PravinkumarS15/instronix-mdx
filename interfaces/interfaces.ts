@@ -16,7 +16,8 @@ interface IMeta {
     tags: string[],
     link: string,
     image: string,
-    when : string
+    when : string,
+    type: string
 }
 
 interface IEvents {
@@ -32,6 +33,7 @@ interface IImageCardProps {
     link: string;
     tags: string[];
     subTitle: string;
+    type: string
   }
 
 interface IAboutContent {

@@ -10,29 +10,17 @@ export default async function Events() {
       <p className=" mt-10 text-center mt-30">Sorry :( No Events Found - 😢</p>
     );
   }
+  const filteredPosts = posts?.filter((post: any) => post.when === "day2");
 
   return (
-    <section className="pt-20">
-      <Container className="flex flex-col items-center gap-6">
-        <p className="section-heading text-white">Events</p>
-
-        <DayCard
-          day="Day 1 | 25-April-2024"
-          link="/events/day1"
-          image="/assets/day1.webp"
-          tags={["Fun", "Tech", "Party"]}
-          quote="A day filled fun, joy and happiness"
-        />
-        <DayCard
-          day="Day 2 | 26-April-2024"
-          link="/events/day2"
-          image="/assets/day2.jpeg"
-          tags={["Fun", "Tech", "Party"]}
-          quote="A day filled fun, joy and happiness"
-        />
-
+    <section className="py-20">
+      <Container className="flex flex-col gap-6">
+        <div className="flex flex-col items-center gap-3">
+          <p className="section-heading text-white">Events</p>
+          <p className="text-2xl text-[#009871]">Day 2 | 25-April-2024</p>
+        </div>
         <div className="flex flex-wrap w-full items-center justify-center gap-10 py-10">
-          {posts.map((post: any) => {
+          {filteredPosts.map((post: any) => {
             return (
               <EventsCard
                 key={post.id}
@@ -48,6 +36,16 @@ export default async function Events() {
             );
           })}
         </div>
+        <p className="text-4xl text-center font-medium text-white mt-10">
+          Don't miss out the fun from Day 1
+        </p>
+        <DayCard
+          day="Day 1 | 25-April-2024"
+          link="/events/day1"
+          image="/assets/day1.webp"
+          tags={["Fun", "Tech", "Party"]}
+          quote="A day filled fun, joy and happiness"
+        />
       </Container>
     </section>
   );

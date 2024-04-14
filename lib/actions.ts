@@ -47,7 +47,7 @@ export async function getEventsByName(fileName: string): Promise<IEvents | undef
             }
         })
 
-        const eventsObj: IEvents = { meta: { id: frontmatter.id, title: frontmatter.title, description:frontmatter.description, date: frontmatter.date, when: frontmatter.when, tags: frontmatter.tags || [], link: frontmatter.link, image: frontmatter.image }, content }
+        const eventsObj: IEvents = { meta: { id: frontmatter.id, type: frontmatter.type, title: frontmatter.title, description:frontmatter.description, date: frontmatter.date, when: frontmatter.when, tags: frontmatter.tags || [], link: frontmatter.link, image: frontmatter.image }, content }
 
         return eventsObj
     } catch(error: any|unknown) {
@@ -79,7 +79,6 @@ export async function getEventsMeta(): Promise<IMeta[] | undefined> {
             events.push(meta)
         }
     }
-    
 
     return events.sort((a, b) => a.date < b.date ? 1 : -1)
 }
