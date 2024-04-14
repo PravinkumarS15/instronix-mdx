@@ -46,7 +46,7 @@ export default function Hero() {
       <motion.div
         className="absolute w-full h-full"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 0.2 }}
+        animate={{ opacity: 0.5 }}
         transition={{
           duration: 2,
           ease: "easeIn",
