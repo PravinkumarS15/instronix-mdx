@@ -1,6 +1,6 @@
 "use client";
 
-import lp1 from "@/public/assets/jpg/lp1.jpg";
+import lp1 from "@/public/assets/jpg/lp1pic.jpg";
 import lp2 from "@/public/assets/jpg/lp2.jpg";
 import lp3 from "@/public/assets/jpg/lp3.jpg";
 import lp4 from "@/public/assets/jpg/lp4.jpg";
