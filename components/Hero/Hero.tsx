@@ -85,7 +85,7 @@ export default function Hero() {
               transition={{ duration: 0.35, ease: "easeInOut" }}
               className="text-2xl font-thin"
             >
-              Dept. of EIE - PTU
+              Dept. Of EIE - PTU
             </motion.p>
           </div>
           <motion.div
