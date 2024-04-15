@@ -46,7 +46,7 @@ export default function Hero() {
       <motion.div
         className="absolute w-full h-full"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        animate={{ opacity: 0.5 }}
         transition={{
           duration: 2,
           ease: "easeIn",
@@ -60,7 +60,7 @@ export default function Hero() {
           className="object-cover w-full h-full opacity-50"
         ></video>
       </motion.div>
-      <Container className=" flex items-center justify-center flex-col pt-20">
+      <Container className=" flex items-center justify-center flex-col pt-10">
         <div className="w-full flex flex-col lg:flex-row max-w-6xl mx-auto">
           <div className="w-full lg:w-1/2 relative flex flex-col text-center lg:text-left gap-5 lg:gap-4 justify-center text-white overflow-hidden">
             <motion.p
@@ -87,8 +87,22 @@ export default function Hero() {
             >
               Dept. of EIE - PTU
             </motion.p>
-            </div>
-          
+          </div>
+          <motion.div
+            className="w-full lg:w-1/2 h-full flex items-center justify-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.35, ease: "easeIn" }}
+          >
+            <Image
+              src="/assets/svg/logo.svg"
+              alt="logo"
+              className="drop-shadow-md"
+              priority
+              width={600}
+              height={400}
+            />
+          </motion.div>
         </div>
       </Container>
       

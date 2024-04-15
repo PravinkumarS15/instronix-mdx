@@ -28,15 +28,15 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
     return timeLeft;
   };
 
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>({});
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
-    return () => clearTimeout(timer);
-  });
+    return () => clearInterval(timer);
+  }, []);
 
   const formatTime = (time: number) => {
     return time < 10 ? `0${time}` : `${time}`;
@@ -63,7 +63,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
       {renderCountdownBox('Sec', timeLeft.seconds)}
       {Object.keys(timeLeft).length === 0 && (
         <div style={{ fontSize: '48px', fontWeight: 'bold', marginTop: '20px' }}>
-          Countdown finished!
+          Welcome all !
         </div>
       )}
     </div>

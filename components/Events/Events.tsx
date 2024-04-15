@@ -29,14 +29,14 @@ export default async function Events() {
       <Container className="flex flex-col gap-5">
         <p className="section-heading text-white">Events</p>
         <DayCard
-          day="Day 1 | 25-April-2024"
+          day="Day 1 | 24-April-2024"
           link="/events/day1"
           image="/assets/day1.webp"
           tags={["Fun", "Tech", "Party"]}
           quote="A day filled fun, joy and happiness"
         />
         <DayCard
-          day="Day 2 | 26-April-2024"
+          day="Day 2 | 25-April-2024"
           link="/events/day2"
           image="/assets/day2.jpeg"
           tags={["Fun", "Tech", "Party"]}

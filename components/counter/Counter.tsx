@@ -21,9 +21,10 @@ export default function Counter() {
       >
         <TextRevealCard
           text={<CounterBlock />}
-          revealText="April 24, 25"
+          revealText="Mark the Date"
         >
         </TextRevealCard>
+        <p className="text-slate-500 text-2xl font-medium">April 24, 25</p>
       </motion.h1>
     </LampContainer>
   );
