@@ -29,7 +29,7 @@ export const aboutContent: IAboutContent[] = [
   {
     title: "PTU",
     description:
-      "Puducherry Technological University(PTU) erstwhile knows as Puducherry Engineering College(PEC) is an university that strives to provide quality education and research opportunities to its students and contribute to the growth and development of the region. The university aims to provide quality education and training to its students to prepare them for the challenges of the global workforce. It has a team of experienced and dedicated faculty members who use modern teaching methods to impart knowledge and skills to students. ",
+      "Puducherry Technological University (PTU) erstwhile knows as Puducherry Engineering College (PEC) is an university that strives to provide quality education and research opportunities to its students and contribute to the growth and development of the region. The university aims to provide quality education and training to its students to prepare them for the challenges of the global workforce. It has a team of experienced and dedicated faculty members who use modern teaching methods to impart knowledge and skills to students. ",
     image: "/assets/jpg/ptu.jpg",
   },
   {
