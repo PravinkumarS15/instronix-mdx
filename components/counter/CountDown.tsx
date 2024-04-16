@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 interface CountdownProps {
   targetDate: Date;
@@ -21,7 +21,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60)
+        seconds: Math.floor((difference / 1000) % 60),
       };
     }
 
@@ -44,25 +44,26 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
 
   const renderCountdownBox = (label: string, value?: number) => {
     return (
-      <div style={{ display: 'inline-block', margin: '0 10px' }}>
-        <div style={{ fontSize: '72px', fontWeight: 'bold', border: '1px solid black', padding: '20px' }}>
-          {value ? formatTime(value) : '00'}
+      <div style={{ display: "inline-block" }} className="text-[#009871]">
+        <div className="text-2xl lg:text-5xl p-5 font-bold">
+          {value ? formatTime(value) : "00"}
         </div>
-        <div style={{ textAlign: 'center', fontSize: '40px' }}>
-          {label}
-        </div>
+        <div className="text-2xl lg:text-5sxl font-bold">{label}</div>
       </div>
     );
   };
 
   return (
     <div>
-      {renderCountdownBox('Days', timeLeft.days)}
-      {renderCountdownBox('Hrs', timeLeft.hours)}
-      {renderCountdownBox('Mins', timeLeft.minutes)}
-      {renderCountdownBox('Sec', timeLeft.seconds)}
+      {renderCountdownBox("Days", timeLeft.days)}
+      {renderCountdownBox("Hrs", timeLeft.hours)}
+      {renderCountdownBox("Mins", timeLeft.minutes)}
+      {renderCountdownBox("Sec", timeLeft.seconds)}
       {Object.keys(timeLeft).length === 0 && (
-        <div style={{ fontSize: '48px', fontWeight: 'bold', marginTop: '20px' }}>
+        <div
+          style={{ fontSize: "48px", fontWeight: "bold", marginTop: "20px" }}
+          className="pt-40"
+        >
           Welcome all !
         </div>
       )}

@@ -4,6 +4,6 @@
 
 @layer utilities {
   .section-heading {
-    @apply  text-3xl lg:text-6xl text-center font-extralight
+    @apply  text-3xl lg:text-6xl text-center font-medium
   }
 }

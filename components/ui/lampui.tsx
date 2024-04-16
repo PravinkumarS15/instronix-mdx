@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -14,7 +14,7 @@ export const LampContainer = ({
   return (
     <div
       className={cn(
-        "relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-black w-full rounded-md z-0 mt-10",
+        "relative flex flex-col items-center justify-center overflow-hidden bg-black w-full rounded-md z-0 pt-56",
         className
       )}
     >
@@ -78,9 +78,7 @@ export const LampContainer = ({
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-black "></div>
       </div>
 
-      <div className="relative z-50 -translate-y-80  px-5">
-        {children}
-      </div>
+      <div className="relative z-50 -translate-y-80  px-5">{children}</div>
     </div>
   );
 };
