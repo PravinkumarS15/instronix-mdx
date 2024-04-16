@@ -48,7 +48,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
         <div className="text-2xl lg:text-5xl p-5 font-bold">
           {value ? formatTime(value) : "00"}
         </div>
-        <div className="text-2xl lg:text-5sxl font-bold">{label}</div>
+        <div className="text-xl lg:text-3xl font-bold">{label}</div>
       </div>
     );
   };
