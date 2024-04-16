@@ -31,7 +31,7 @@ export default function About() {
                   className="w-screen px-5 lg:px-20 flex items-center justify-center"
                 >
                   <div className=" max-w-7xl mx-auto">
-                    <div className="w-full flex gap-7 flex-col lg:flex-row items-center justify-center">
+                    <div className="w-full flex gap-5 flex-col lg:flex-row items-center justify-center">
                       <div className="w-full lg:w-1/2 flex items-center justify-center">
                         <Image
                           src={content.image}
