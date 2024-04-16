@@ -60,14 +60,14 @@ export default function Hero() {
           className="object-cover w-full h-full opacity-50"
         ></video>
       </motion.div>
-      <Container className=" flex items-center justify-center flex-col pt-10">
+      <Container className=" flex items-center justify-center pt-20 md:pt-12 flex-col lg:pt-10">
         <div className="w-full flex flex-col lg:flex-row max-w-6xl mx-auto">
           <div className="w-full lg:w-1/2 relative flex flex-col text-center lg:text-left gap-5 lg:gap-4 justify-center text-white overflow-hidden">
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.35, ease: "easeInOut" }}
-              className="text-5xl lg:text-7xl font-semibold text-transparent gradient-text overflow-hidden text-white"
+              className="text-3xl md:text-5xl lg:text-7xl font-semibold text-transparent gradient-text overflow-hidden text-white"
             >
               Instronix 2024
             </motion.p>
@@ -75,7 +75,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.35, ease: "easeInOut" }}
-              className="text-2xl font-thin"
+              className="text-xl lg:text-2xl font-thin"
             >
               A National Technical Symposium
             </motion.p>
@@ -109,10 +109,10 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.38, ease: "easeIn" }}
-        className="absolute top-[calc(100%-160px)] overflow-hidden "
+        className="absolute top-[calc(100%-60px)] md:top-[calc(100%-90px)]  lg:top-[calc(100%-100px)] overflow-visible"
       >
         <div
-          className="relative whitespace-nowrap text-gray-300 opacity-25 text-[120px] font-medium"
+          className="relative whitespace-nowrap text-gray-300 opacity-25 text-5xl md:text-7xl lg:text-8xl font-medium"
           ref={slider}
         >
           <p className="relative m-0 pr-0" ref={firstText}>

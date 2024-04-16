@@ -48,9 +48,9 @@ export default async function Post({ params: { eventId } }: Props) {
   const filteredPosts = posts?.filter((post: any) => post.type === meta.type);
 
   return (
-    <div className="relative max-w-6xl mx-auto px-5 mt-20 mb-8 flex flex-col gap-5 text-white">
-      <div className="flex flex-row gap-2 ">
-        <div className="w-2/5 sticky top-28  flex flex-col items-start justify-center h-full gap-4">
+    <div className="relative max-w-6xl mx-auto px-5 mt-28 lg:mt-20 mb-8  flex flex-col gap-5 text-white">
+      <div className="flex flex-col lg:flex-row gap-7 lg:gap-2 ">
+        <div className="w-full lg:w-2/5 lg:sticky top-28  flex flex-col items-center lg:items-start justify-center h-full gap-10 lg:gap-4">
           <p className=" text-left text-4xl font-bold">{meta.title}</p>
           <div className="overflow-hidden ">
             <Image
@@ -68,9 +68,9 @@ export default async function Post({ params: { eventId } }: Props) {
           </a>
         </div>
 
-        <div className=" relative w-3/5 px-5  text-black flex flex-col gap-2">
-          <div className="h-24 bg-gradient-to-b from-black to-transparent via-opacity-0 sticky top-20"></div>
-          <article className="prose prose-xl text-white prose-h4:text-white prose-h3:text-white">
+        <div className=" relative w-full lg:w-3/5 px-5  text-black flex flex-col gap-2">
+          <div className="h-24 bg-gradient-to-b from-black to-transparent via-opacity-0 hidden lg:sticky top-20"></div>
+          <article className="prose prose-lg lg:prose-xl text-white prose-h4:text-white prose-h3:text-white">
             {content}
           </article>
         </div>

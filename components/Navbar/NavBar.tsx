@@ -6,6 +6,7 @@ import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { AnimatePresence } from "framer-motion";
 import NavSheet from "./NavSheet";
+import Link from "next/link";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -16,10 +17,13 @@ export default function NavBar() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.45, ease: "easeInOut" }}
-        className="text-white fixed top-0 w-full z-50 py-2 bg-black"
+        className="text-white fixed top-0 w-full z-50 py-1 bg-black"
       >
         <Container className="flex flex-row justify-between items-center">
-          <p className="font-light text-3xl ">Instronix</p>
+          <Link href="/">
+            <p className="font-light text-3xl ">Instronix</p>
+          </Link>
+
           <div
             className="group flex h-16 w-16 cursor-pointer items-center justify-center rounded-full  "
             onClick={() => setIsOpen(!isOpen)}

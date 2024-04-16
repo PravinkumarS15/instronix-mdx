@@ -15,9 +15,13 @@ export default function About() {
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-70%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] text-white">
+    <section
+      ref={targetRef}
+      className="relative h-[300vh] text-white"
+      id="about-us"
+    >
       <div className=" sticky top-10 h-screen pt-10 my-20">
-        <p className="section-heading">About Us</p>
+        <p className="section-heading mb-5">About Us</p>
         <div className=" flex items-center overflow-hidden">
           <motion.div className="flex gap-4" style={{ x }}>
             {aboutContent.map((content: IAboutContent, index: number) => {
@@ -33,7 +37,7 @@ export default function About() {
                           src={content.image}
                           alt="about_image"
                           className="object-cover"
-                          width={600}
+                          width={550}
                           height={300}
                         />
                       </div>
@@ -45,6 +49,13 @@ export default function About() {
                         <p className="text-xl font-thin">
                           {content.description}
                         </p>
+                        {content?.link && (
+                          <a href={content?.link}>
+                            <p className="text-left px-5 py-4 mx-auto lg:mx-0  text-white max-w-max bg-[#009871] hover:bg-[#009871]/85 rounded-[40px]">
+                              Know more
+                            </p>
+                          </a>
+                        )}
                       </div>
                     </div>
                   </div>

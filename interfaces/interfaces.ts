@@ -39,5 +39,6 @@ interface IImageCardProps {
 interface IAboutContent {
     title: string;
     description: string;
-    image: string
+    image: string;
+    link ?: string
 }
