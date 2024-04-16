@@ -105,24 +105,7 @@ export default function Hero() {
           </motion.div>
         </div>
       </Container>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.38, ease: "easeIn" }}
-        className="absolute top-[calc(100%-160px)] overflow-hidden "
-      >
-        <div
-          className="relative whitespace-nowrap text-gray-300 opacity-25 text-[120px] font-medium"
-          ref={slider}
-        >
-          <p className="relative m-0 pr-0" ref={firstText}>
-            Instronix 2024 - EIE - PTU -
-          </p>
-          <p className="absolute left-full top-0" ref={secondText}>
-            Instronix 2024 - EIE - PTU -
-          </p>
-        </div>
-      </motion.div>
+      
     </section>
   );
 }
