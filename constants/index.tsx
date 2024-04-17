@@ -15,16 +15,16 @@ export const navLinks: INavLinks[] = [
 
 export const footerLinks: any = [
   {
-    link: "https://www.google.com/",
+    link: "https://www.instagram.com/instronix_ptu/",
     icon: "/assets/svg/instagram.svg",
   },
   {
-    link: "vikrampalani0107@gmail.com",
+    link: "instronix2k24@gmail.com",
     icon: "/assets/svg/mail.svg",
     mail: true,
   },
   {
-    link: "https://www.google.com/",
+    link: "https://maps.app.goo.gl/Zj761th5y6CZqz1x8",
     icon: "/assets/svg/location.svg",
   },
 ];
@@ -33,7 +33,7 @@ export const socialLinks: ISocialLinks[] = [
   {
     title: "Instagram",
     icon: "/assets/svg/insta.svg",
-    href: "https://www.google.com",
+    href: "https://www.instagram.com/instronix_ptu/",
   },
 ];
 
