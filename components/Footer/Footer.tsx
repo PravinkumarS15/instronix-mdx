@@ -35,7 +35,7 @@ export default function Footer() {
             >
               <p className="text-[#009871]">Vikram</p>
             </a>
-            <p>🚀</p>
+            <Image src="/assets/doggif.gif" alt="gif" width={30} height={30} />
             <a href="">
               <p className="text-[#009871]">Pravin</p>
             </a>
