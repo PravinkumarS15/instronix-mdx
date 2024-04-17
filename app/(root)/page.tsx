@@ -4,6 +4,7 @@ import LandingParallex from "@/components/Landingparallex/LandingParallex";
 import Events from "@/components/Events/Events";
 import Counter from "@/components/counter/Counter";
 import Footer from "@/components/Footer/Footer";
+import AboutMobile from "@/components/About/AboutMobile";
 
 export const revalidate = 86400; // 1 day
 
@@ -13,7 +14,13 @@ export default function HomePage() {
       <section className="flex-coloum-center gap-6 w-full ">
         <Hero />
         <Counter />
-        <About />
+        <div className="block lg:hidden">
+          <AboutMobile />
+        </div>
+        <div className="hidden lg:block">
+          <About />
+        </div>
+
         <LandingParallex />
         <Events />
       </section>

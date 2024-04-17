@@ -21,7 +21,9 @@ export default function About() {
       id="about-us"
     >
       <div className=" sticky top-10 h-screen pt-10 my-20">
-        <p className="section-heading mb-5">About Us</p>
+        <p className="text-3xl lg:text-5xl text-center font-medium mb-5">
+          About Us
+        </p>
         <div className=" flex items-center overflow-hidden">
           <motion.div className="flex gap-4" style={{ x }}>
             {aboutContent.map((content: IAboutContent, index: number) => {
@@ -42,11 +44,11 @@ export default function About() {
                         />
                       </div>
 
-                      <div className="w-full lg:w-1/2 flex flex-col justify-center text-left gap-4">
-                        <p className="text-5xl font-light text-center lg:text-left">
+                      <div className="max-w-2xl mx-auto lg:w-1/2 flex flex-col justify-center text-left gap-4">
+                        <p className="text-3xl font-light text-center lg:text-left">
                           {content.title}
                         </p>
-                        <p className="text-xl font-thin">
+                        <p className=" text-lg lg:text-xl font-thin">
                           {content.description}
                         </p>
                         {content?.link && (

@@ -7,6 +7,8 @@ import "highlight.js/styles/github-dark.min.css";
 import Hero from "@/components/Hero/Hero";
 import EventsCard from "@/components/Events/EventsCard";
 
+export const revalidate = 86400;
+
 type Props = {
   params: {
     eventId: string;
