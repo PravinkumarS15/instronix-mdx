@@ -3,7 +3,7 @@ import { getEventsMeta } from "@/lib/actions";
 import EventsCard from "@/components/Events/EventsCard";
 import DayCard from "@/components/Events/DayCard";
 
-export const revalidate = 86400;
+
 
 export default async function Events() {
   const posts = await getEventsMeta();

@@ -6,7 +6,7 @@ import Counter from "@/components/counter/Counter";
 import Footer from "@/components/Footer/Footer";
 import AboutMobile from "@/components/About/AboutMobile";
 
-export const revalidate = 86400; // 1 day
+
 
 export default function HomePage() {
   return (
