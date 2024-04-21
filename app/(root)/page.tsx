@@ -5,7 +5,7 @@ import Events from "@/components/Events/Events";
 import Counter from "@/components/counter/Counter";
 import Footer from "@/components/Footer/Footer";
 import AboutMobile from "@/components/About/AboutMobile";
-
+import FlexRowLandscapeImages from "@/components/best/best";
 
 
 export default function HomePage() {
@@ -22,6 +22,7 @@ export default function HomePage() {
         </div>
 
         <LandingParallex />
+        <FlexRowLandscapeImages />
         <Events />
       </section>
     </>
